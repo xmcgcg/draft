@@ -7874,7 +7874,7 @@ unique_lock& operator=(unique_lock&& u) noexcept;
 \begin{itemdescr}
 \pnum
 \effects
-Equivalent to: \tcode{unique_lock\{std::move(u)\}.swap(*this)}
+Equivalent to: \tcode{unique_lock(std::move(u)).swap(*this)}
 
 \pnum
 \returns
@@ -8365,7 +8365,7 @@ shared_lock& operator=(shared_lock&& sl) noexcept;
 \begin{itemdescr}
 \pnum
 \effects
-Equivalent to: \tcode{shared_lock\{std::move(sl)\}.swap(*this)}
+Equivalent to: \tcode{shared_lock(std::move(sl)).swap(*this)}
 
 \pnum
 \returns
